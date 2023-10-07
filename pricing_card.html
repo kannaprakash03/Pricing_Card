@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Cards</title>
+    <style>
+      /* Center the entire pricing section both horizontally and vertically on the page */
+      html,
+      body {
+        background-color: #d9eef5;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Center the title at the top of the page */
+      .title-container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Container for the pricing cards */
+      .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+      }
+
+      /* Individual pricing card styles */
+      .pricing-card {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Highlighted pricing card */
+      .highlighted {
+        background-color: #b6b6b6;
+        color: #181717;
+      }
+
+      /* Price title style */
+      .price-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      /* Price style */
+      .price {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      /* Features list style */
+      .features {
+        list-style: none;
+        padding: 0;
+      }
+
+      /* Feature item style */
+      .feature-item {
+        margin-bottom: 10px;
+      }
+
+      /* CTA button style */
+      .cta-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Centered title container -->
+    <div class="title-container">
+      <h1>Pricing Plans</h1>
+    </div>
+
+    <div class="pricing-container">
+      <!-- Pricing Card 1 -->
+      <div class="pricing-card">
+        <div class="price-title">Basic Plan</div>
+        <div class="price">$9.99/month</div>
+        <ul class="features">
+          <li class="feature-item">1 User's</li>
+          <li class="feature-item">1000 Email Previews</li>
+          <li class="feature-item">10 contacts per client</li>
+        </ul>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+
+      <!-- Pricing Card 2 (Highlighted) -->
+      <div class="pricing-card highlighted">
+        <div class="price-title">Pro Plan</div>
+        <div class="price">$19.99/month</div>
+        <ul class="features">
+          <li class="feature-item">10 User's</li>
+          <li class="feature-item">2000 Email Previews</li>
+          <li class="feature-item">10 contacts per client</li>
+        </ul>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+
+      <!-- Pricing Card 3 -->
+      <div class="pricing-card">
+        <div class="price-title">Premium Plan</div>
+        <div class="price">$29.99/month</div>
+        <ul class="features">
+          <li class="feature-item">20 User's</li>
+          <li class="feature-item">Unlimited Email Previews</li>
+          <li class="feature-item">Unlimited contacts per client</li>
+        </ul>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </div>
+  </body>
+</html>
